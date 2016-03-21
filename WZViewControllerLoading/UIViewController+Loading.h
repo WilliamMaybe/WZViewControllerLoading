@@ -10,26 +10,28 @@
 
 @interface UIViewController (Loading)
 
-@property (nonatomic, readonly, getter=isLoading) BOOL loading;
+@property (nonatomic, readonly) BOOL wz_loading;
+/// default is NO
+@property (nonatomic ,assign) BOOL wz_loadingInteractionEnabled;
 
 #pragma mark - Success
-- (void)postSuccess;
-- (void)postSuccess:(NSString *)message;
-- (void)postSuccess:(NSString *)message overTime:(NSTimeInterval)second;
+- (void)wz_postSuccess;
+- (void)wz_postSuccess:(NSString *)message;
+- (void)wz_postSuccess:(NSString *)message overTime:(NSTimeInterval)second;
 
 #pragma mark - Error
-- (void)postError:(NSString *)message;
-- (void)postError:(NSString *)message duration:(CGFloat)duration;
-- (void)postError:(NSString *)message detailMessage:(NSString *)detailMessage duration:(CGFloat)duration;
+- (void)wz_postError:(NSString *)message;
+- (void)wz_postError:(NSString *)message duration:(CGFloat)duration;
+- (void)wz_postError:(NSString *)message detailMessage:(NSString *)detailMessage duration:(CGFloat)duration;
 
 #pragma mark - Loading
-- (void)postProgress:(float)progress;
-- (void)postLoading;
-- (void)postLoading:(NSString *)message;
-- (void)postLoading:(NSString *)title message:(NSString *)message;
-- (void)postLoading:(NSString *)title message:(NSString *)message overTime:(NSTimeInterval)second;
+- (void)wz_postProgress:(float)progress;
+- (void)wz_postLoading;
+- (void)wz_postLoading:(NSString *)message;
+- (void)wz_postLoading:(NSString *)title message:(NSString *)message;
+- (void)wz_postLoading:(NSString *)title message:(NSString *)message overTime:(NSTimeInterval)second;
 
 #pragma mark - Hide
-- (void)hideLoading;
+- (void)wz_hideLoading;
 
 @end

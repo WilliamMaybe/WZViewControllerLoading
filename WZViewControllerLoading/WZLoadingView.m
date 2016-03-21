@@ -113,6 +113,8 @@
         return;
     }
     
+    [self cancelOverTimer];
+    
     self.HUD.mode = MBProgressHUDModeAnnularDeterminate;
     self.HUD.progress = progress;
     [self.HUD show:YES];
@@ -135,6 +137,8 @@
         return;
     }
     
+    [self cancelOverTimer];
+    
     if (self.isLoading && [self.HUD.labelText isEqualToString:message]) {
         return;
     }
@@ -153,11 +157,16 @@
     self.loading = NO;
     [self.HUD hide:animated];
     self.delegate = nil;
-    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(overTimerCallBack) object:nil];
+    [self cancelOverTimer];
 }
 
 - (void)overTimerCallBack {
     [self hide:NO];
+}
+
+#pragma mark - Private Method
+- (void)cancelOverTimer {
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(overTimerCallBack) object:nil];
 }
 
 #pragma mark - MBProgressHUD Delegate
