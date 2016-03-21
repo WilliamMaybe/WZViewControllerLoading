@@ -1,10 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "WZViewControllerLoading"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.homepage     = "https://github.com/WilliamMaybe/WZViewControllerLoading"
   s.license      = "MIT"
   s.summary      = "A loading Extension for ViewController."
-  s.description  = "A loading Extension for ViewController."
   s.author       = { "WilliamMaybe" => "271138178@qq.com" }
   s.source       = { :git => "https://github.com/WilliamMaybe/WZViewControllerLoading.git", :tag => "#{s.version}" }
   s.source_files  =  "WZViewControllerLoading/*.{h,m}"

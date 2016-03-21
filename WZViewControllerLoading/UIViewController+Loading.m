@@ -39,7 +39,7 @@
 
 @implementation UIViewController (Loading)
 
-- (BOOL)wz_isLoading {
+- (BOOL)wz_loading {
     return self.loadingView && !self.loadingView.hidden;
 }
 
