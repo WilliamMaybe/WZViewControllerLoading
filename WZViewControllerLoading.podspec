@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary      = "A loading Extension for ViewController."
   s.description  = "A loading Extension for ViewController."
   s.author       = { "WilliamMaybe" => "271138178@qq.com" }
-  s.source       = { :git => "https://github.com/WilliamMaybe/WZViewControllerLoading.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/WilliamMaybe/WZViewControllerLoading.git", :tag => "#{s.version}" }
   s.source_files  =  "WZViewControllerLoading/*.{h,m}"
   s.dependency 'MBProgressHUD', '~> 0.9.2'
   s.dependency 'Masonry', '~>0.6.4'
