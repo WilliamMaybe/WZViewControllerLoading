@@ -16,7 +16,7 @@ pod spec create WZViewControllerLoading
 
 ## step two
 将podspec中相应信息填写完整	
-![](README/image_1.png =00x300)
+![](README/image_1.png)
 需要自行添加s.dependency 依赖库 有多少写多少
 之后要提交版本只需要更新s.version到对应的tag就好了
 
@@ -52,7 +52,7 @@ git push origin :refs/tags/0.0.1
 ```
 pod spec lint WZViewControllerLoading.podspec --allow-warnings
 ```
-![](README/image_2.png =00x200)
+![](README/image_2.png)
 出现xxx.podspec passed validation即为成功
 
 接下来准备正式发布到cocoapods上了。
