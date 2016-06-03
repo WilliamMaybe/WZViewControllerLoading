@@ -45,7 +45,7 @@
 
 - (BOOL)wz_loadingInteractionEnabled {
     id value = objc_getAssociatedObject(self, _cmd);
-    return value ? [value boolValue] : NO;
+    return value ? [value boolValue] : YES;
 }
 
 - (void)setWz_loadingInteractionEnabled:(BOOL)wz_loadingInteractionEnabled {

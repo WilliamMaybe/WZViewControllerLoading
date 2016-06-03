@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "WZViewControllerLoading"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.homepage     = "https://github.com/WilliamMaybe/WZViewControllerLoading"
   s.license      = "MIT"
   s.summary      = "A loading Extension for ViewController."

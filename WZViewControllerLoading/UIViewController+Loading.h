@@ -11,7 +11,7 @@
 @interface UIViewController (Loading)
 
 @property (nonatomic, readonly) BOOL wz_loading;
-/// default is NO
+/// default is YES
 @property (nonatomic ,assign) BOOL wz_loadingInteractionEnabled;
 
 #pragma mark - Success
